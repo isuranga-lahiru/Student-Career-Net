@@ -1,0 +1,6 @@
+To change the Email message - goto companies.php line 68 
+				chage subject and send message as you needed...
+
+i created new email for your bisnuss - student.career.eusl@gmail.com
+
+to send email i imported new library called PHPMailer that folder includes library files dont change them

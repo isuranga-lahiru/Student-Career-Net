@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  position: relative; /* Needed for positioning child elements */
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+/*home page backgroound image*/
+.hero-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  background: url("immmage/bg.webp") center/cover no-repeat; /* Background image only */
+}
+/*admine page background image*/
+.hero-section2 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  background: url("immmage/admine.webp") center/cover no-repeat; /* Background image only */
+}
+
+
+
+.main_container {
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  padding: 30px;
+  margin: 30px auto;
+  color: #0056b3;
+  min-width: 1000px;
+
+  /* glass effct */
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main_container h2 {
+  margin-bottom: 30px;
+}
+
+.wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.hero-section h1 {
+  margin-top: 1rem;
+}
+
+.container p {
+  font-size: 24px;
+}
+
+.hero-section .lead {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #0056b3;
+  font-style: italic;
+}
+
+.hero-section .btn {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 1.2em;
+}
+
+.hero-section .view-resume {
+  background-color: #fff;
+  color: #007bff;
+  border: 2px solid #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-section .upload-resume {
+  background-color: #fff;
+  color: #007bff;
+  border: 2px solid #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-section .view-resume:hover {
+  background-color: #0056b3;
+  color: #fff;
+  border-color: #0056b3;
+}
+
+.hero-section .upload-resume:hover {
+  background-color: #0056b3;
+  color: #fff;
+  border-color: #0056b3;
+}
+
+
+
+/* Button Hover Effects */
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #007bff;
+  border-color: #007bff;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: transparent !important;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  padding: 15px;
+}
+
+.navbar-brand,
+.nav-link {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.navbar-nav li {
+  margin-left: 20px;
+  padding: 10px 20px;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+
+.navbar-nav li:hover {
+  background: #fefefe;
+  border-radius: 10px;
+  color: white;
+}
+
+.navbar-brand img {
+  margin-right: 10px; /* Adds space between the logo and the text */
+  border-radius: 5px; /* Optional: makes the logo corners rounded */
+}
+
+/* Container Styling */
+.container {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #007bff;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.form-group label {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.form-control-file {
+  border: none;
+}
+
+button.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* Additional Styling for Resume Section */
+.resume-list {
+  margin-top: 30px;
+}
+
+.resume-list h2 {
+  font-size: 2em;
+  color: #007bff;
+}
+
+.resume-list-item {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume-list-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.resume-list-item .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.resume-list-item .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styling */
+
+.footer {
+  background-color: #555;
+  min-height: 10vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+  height: 10px; /* Define height to fit the footer content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.database-imorted{
+
+  font-size: 0.9em;
+  color: #555;
+
+}
+.company-table-data{
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.formtext{
+  font-size: 1em;
+  font-weight: 350;
+
+}
